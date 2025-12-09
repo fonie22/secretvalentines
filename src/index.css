@@ -20,12 +20,12 @@ body {
 .bg-postcard {
   background: repeating-linear-gradient(
     45deg,
-    #5CC48A,
-    #5CC48A 30px,
+    #66CCFF,
+    #66CCFF 30px,
     #FFFFFF 30px,
     #FFFFFF 60px,
-    #EF3D3D 60px,
-    #EF3D3D 90px,
+    #FBE3D6 60px,
+    #FBE3D6 90px,
     #FFFFFF 90px,
     #FFFFFF 120px
   );
@@ -34,10 +34,10 @@ body {
 .bg-postcard-nowhite {
   background: repeating-linear-gradient(
     45deg,
-    #5CC48A,
-    #5CC48A 30px,
-    #EF3D3D 30px,
-    #EF3D3D 60px
+    #66CCFF,
+    #66CCFF 30px,
+    #FBE3D6 30px,
+    #FBE3D6 60px
   );
 }
 
