@@ -3,14 +3,17 @@
 @tailwind utilities;
 
 body {
-  background: url(../static/snow.png), url(../static/snow.png), #FBC4C1 url(../static/cats.png) center repeat;
+  background-image: url(../static/snow.png), url(../static/snow.png), url(../static/cats.png);
   background-repeat: repeat, repeat, no-repeat;
+  background-position: center, center, center;
   background-size: auto auto, auto auto, contain;
   background-attachment: fixed, fixed, fixed;
+
   animation-name: snow;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+
   font-family: 'Comic Sans MS';
 }
 
