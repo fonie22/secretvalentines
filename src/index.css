@@ -4,6 +4,7 @@
 
 body {
   background-image: url(../static/snow.png), url(../static/snow.png), url(../static/cats.png);
+  backdrop-filter: blur(1px);
   background-repeat: repeat;
   background-position: center, center, center;
   background-size: auto auto, auto auto, contain;
