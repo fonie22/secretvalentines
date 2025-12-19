@@ -66,7 +66,7 @@ export function RulesModal({
   const hasMustNotRule = localRules.some(rule => rule.type === 'mustNot');
 
   if (!isOpen)
-      return null;
+    return null;
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
@@ -74,7 +74,7 @@ export function RulesModal({
         <h2 className="text-xl font-bold mb-4">
           {t('rules.title', { name: participant.name })}
         </h2>
-        
+
         <div className="mb-6">
           <label className="block text-sm font-medium text-gray-700 mb-2">
             {t('rules.hintLabel')}
@@ -87,12 +87,12 @@ export function RulesModal({
             className="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
           />
         </div>
-        
+
         <div className="space-y-4 mb-6">
           {localRules.map((rule, index) => (
             <div key={index} className="flex gap-2 items-center">
               <span>
-                {rule.type === 'must' 
+                {rule.type === 'must'
                   ? t('rules.mustBePairedWith')
                   : t('rules.mustNotBePairedWith')
                 }
@@ -126,9 +126,9 @@ export function RulesModal({
             onClick={() => addRule('must')}
             disabled={hasMustNotRule}
             className={`flex-1 p-2 rounded flex items-center justify-center gap-2
-              ${hasMustNotRule 
-                ? 'bg-gray-400 cursor-not-allowed' 
-                : 'bg-blue-500 hover:bg-blue-600'} text-white`}
+              ${hasMustNotRule
+                ? 'bg-gray-400 cursor-not-allowed'
+                : 'bg-[#c6dbef] hover:bg-[#9ecae1]'} text-white`}
           >
             <Link size={20} />
             {t('rules.addMustRule')}
@@ -137,9 +137,9 @@ export function RulesModal({
             onClick={() => addRule('mustNot')}
             disabled={hasMustRule}
             className={`flex-1 p-2 rounded flex items-center justify-center gap-2
-              ${hasMustRule 
-                ? 'bg-gray-400 cursor-not-allowed' 
-                : 'bg-red-500 hover:bg-red-600'} text-white`}
+              ${hasMustRule
+                ? 'bg-gray-400 cursor-not-allowed'
+                : 'bg-[#d0320e] hover:bg-[#d2042d]'} text-white`}
           >
             <LinkBreak size={20} />
             {t('rules.addMustNotRule')}
@@ -155,7 +155,7 @@ export function RulesModal({
           </button>
           <button
             onClick={handleSave}
-            className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+            className="px-4 py-2 bg-[#8bca84] text-white rounded hover:bg-[#72bf6a]"
           >
             {t('rules.saveRules')}
           </button>
